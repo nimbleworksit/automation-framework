@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="automation-framework" verbose="1" thread-count="3" parallel="tests" configfailurepolicy="continue">
+    
+    <listeners>
+        <listener class-name="com.ensono.app.test.runners.TestNGExecutionListener"></listener>
+    </listeners>
+    
+    <!-- This parameter will be passed to every test in this suite -->        
+    <parameter name="host-url" value="http://app.jira.ensono.com" />
+  
+   
+    <test name="Tests in FF">
+        <parameter name="browser-name" value="FIREFOX" />          	
+        <classes>        
+            <class name="com.ensono.app.test.runners.CukesTestInFirefox"/>
+        </classes>
+    </test>
+<!-- 
+    <test name="Tests in Chrome">
+        <parameter name="browser-name" value="CHROME" />        
+        <classes>
+            <class name="com.ensono.app.test.runners.CukesTestInChrome"/>
+        </classes>
+    </test>  
+
+
+   <test name="Tests in IE">
+        <parameter name="browser-name" value="IE" />          	
+        <classes>        
+            <class name="com.ensono.app.test.runners.CukesTestInIE"/>
+        </classes>
+    </test>
+   -->
+</suite>

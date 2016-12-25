@@ -1,6 +1,6 @@
 # GATEWAY AUTOMATION BY ENSONO #
 
-This is the repository for the Gateway 3.0 test automation framework by Ensono.
+This is the repository for the Gateway 3.0 test automation framework by Ensono
 
 ### Set Up ###
 
